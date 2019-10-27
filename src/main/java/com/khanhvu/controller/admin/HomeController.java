@@ -20,13 +20,13 @@ public class HomeController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServerException, IOException {
 		
 		
-		
+		/*
 		  UserDTO userDTO = new UserDTO(); 
 		  userDTO.setFullName("Hello ae");
-		  request.setAttribute("dto", userDTO);
+		  request.setAttribute("dto", userDTO);*/
 		 
 		 
-		RequestDispatcher rd = request.getRequestDispatcher("/views/admin/home.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("/views/home.jsp");
 		try {
 			rd.forward(request, response);
 		} catch (ServletException e) {

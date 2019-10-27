@@ -19,6 +19,7 @@ public class BuildingService implements IBuildingService{
 	public BuildingDTO save(BuildingDTO buildingDTO) {
 		BuildingConverter buildingConverter = new BuildingConverter();
 		BuildingEntity buildingEntity = buildingConverter.convertToEntity(buildingDTO);
+		//khi thêm tòa nhà sẽ lưu lại ngày 
 		buildingEntity.setCreatedDate(new Timestamp(System.currentTimeMillis()));
 		@SuppressWarnings("unused")
 		Long id = buildingRepository.insert(buildingEntity);

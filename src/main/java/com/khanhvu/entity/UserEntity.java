@@ -7,8 +7,10 @@ import com.khanhvu.annotation.Column;
 //import java.sql.Timestamp;
 
 import com.khanhvu.annotation.Entity;
+import com.khanhvu.annotation.Table;
 
 @Entity
+@Table( name = " user")
 public class UserEntity extends BaseEntity {
 	@Column(name = "username")
 	private String userName;

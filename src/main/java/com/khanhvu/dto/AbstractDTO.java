@@ -36,8 +36,29 @@ public class AbstractDTO  {
 	public void setModifiedDate(Timestamp modifiedDate) {
 		this.modifiedDate = modifiedDate;
 	}
+	public int getMaxPageItem() {
+		return maxPageItem;
+	}
+	public void setMaxPageItem(int maxPageItem) {
+		this.maxPageItem = maxPageItem;
+	}
+	public int getPage() {
+		return page;
+	}
+	public void setPage(int page) {
+		this.page = page;
+	}
+	public String getAction() {
+		return action;
+	}
+	public void setAction(String action) {
+		this.action = action;
+	}
 	private String createBy;
 	private String modifiedBy;
 	private Timestamp createdDate;
 	private Timestamp modifiedDate;
+	private int maxPageItem = 10;
+	private int page = 1;
+	private String action;
 }

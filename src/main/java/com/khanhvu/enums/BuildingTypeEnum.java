@@ -2,9 +2,9 @@ package com.khanhvu.enums;
 
 public enum BuildingTypeEnum {
 	
-	  	TANG_TRET("tang tret"),
-	    NGUYEN_CAN("nguyen can"),
-	    NOI_THAT("noi that");
+	  	TANG_TRET("Tầng trệt"),
+	    NGUYEN_CAN("Nguyên căn"),
+	    NOI_THAT("Nội thất");
 	 
 
 	    private String value;

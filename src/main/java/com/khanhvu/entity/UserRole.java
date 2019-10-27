@@ -2,8 +2,10 @@ package com.khanhvu.entity;
 
 import com.khanhvu.annotation.Column;
 import com.khanhvu.annotation.Entity;
+import com.khanhvu.annotation.Table;
 
 @Entity
+@Table( name = " user_role")
 public class UserRole extends BaseEntity {
 	
 	@Column(name = "userid")
